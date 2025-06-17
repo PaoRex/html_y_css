@@ -16,4 +16,4 @@ Clase Nº 5: [Formularios](https://github.com/PaoRex/html_y_css/blob/main/formul
 
 Clase Nº 1: [Introducción](https://github.com/PaoRex/html_y_css/tree/main/curso_css/introduccion)
 
-Clase Nº 2: [Propiedades del texto]() 
+Clase Nº 2: [Propiedades del texto](https://github.com/PaoRex/html_y_css/tree/main/curso_css/propiedades_de_texto)
