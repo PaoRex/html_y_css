@@ -8,6 +8,11 @@ p {
 }
 
 
+li {
+  color: gray;
+}
+
+
 span {
   color: red;
 }
