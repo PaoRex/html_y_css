@@ -14,4 +14,6 @@ Clase Nº 5: [Formularios](https://github.com/PaoRex/html_y_css/blob/main/formul
 
 # Curso de CSS Principiante
 
-Clase Nº1: [Introducción](https://github.com/PaoRex/html_y_css/tree/main/curso_css/introduccion)
+Clase Nº 1: [Introducción](https://github.com/PaoRex/html_y_css/tree/main/curso_css/introduccion)
+
+Clase Nº 2: [Propiedades del texto]() 
