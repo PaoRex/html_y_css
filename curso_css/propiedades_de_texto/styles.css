@@ -1,1 +1,22 @@
+h1 {
+  font-weight: bold;
+}
+p {
+  color:red;
+  font-family: sans-Serif;
+  font-size: 13px;
+  /* Ejemplo para poner en negrita: font-weight: bold; */
+  font-weight: 700;
+  /* Bold = 700 y Bolder busca el valor por defecto de la tipografía y la aumenta */
+  font-style: italic; /* O también Oblique poniendole deg*/
+  text-align: justify; /* O right, center y left */
+  line-height: 1.4;
+  letter-spacing: 1px;
+  /* Puedes utilizar text-transform para lowercase, uppercase y capitalize */
+}
 
+span {
+  text-decoration: line-through; /* Pueden ser también underline y overline y se pueden combinar juntas
+  o utilizar none para eliminar decoración
+  */
+}
