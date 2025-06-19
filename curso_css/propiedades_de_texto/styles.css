@@ -3,10 +3,10 @@ h1 {
 }
 p {
   color:red;
-  font-family: sans-Serif;
+  font-family: Montserrat;
   font-size: 13px;
   /* Ejemplo para poner en negrita: font-weight: bold; */
-  font-weight: 700;
+  font-weight: 400;
   /* Bold = 700 y Bolder busca el valor por defecto de la tipografía y la aumenta */
   font-style: italic; /* O también Oblique poniendole deg*/
   text-align: justify; /* O right, center y left */
