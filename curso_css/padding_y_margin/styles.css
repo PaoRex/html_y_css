@@ -1,1 +1,17 @@
+.formulario {
+  background: blue;
+  padding: 30px;
+}
 
+.formulario_input {
+  padding: 10px; /* Puede ser padding-top, bottom, right, left */
+  width: 100%;
+  box-sizing: border-box;
+  background: black;
+  color: white;
+}
+
+.formulario_submit {
+  letter-spacing: 2px;
+  background: black; /* azul claro */
+}
