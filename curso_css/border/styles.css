@@ -1,0 +1,65 @@
+div {
+  background: red;
+  width: 200px;
+  margin: auto;
+  text-align: center;
+  /* Definimos las 3 propiedades de bordes */
+  border-width: 5px; /* Grosor del borde */
+  border-style: solid; /* Estilo del borde :
+  dashed: con rayitas, double: doble borde, groove,
+  dotted: con puntitos, transparent, 
+  */
+  border-color: green; /* Color del borde (no necesario de definir) */
+  border-radius: 4px; /* px: dos border ovalados y dos rectos,
+  %: todos los bordes curvos y la caja en forma ovalada
+  */
+  /* Tambien lo podemos hacer de un solo:
+  border: 3px solid black;
+  */
+  /* Y podemos modificar el lugar en el que está el borde:
+  border-left: 3px solid black;
+  
+  Pero si lo queremos 1 por 1:
+  
+  border-top-color: red;
+  
+  Y siempre con top, left, right, top, bottom
+  
+  También podemos definir más de una posición de un borde con sus estilos
+  
+  Incluso podemos modificar el estilo en cada posición de radius:
+  
+  border-top-left-radius: 20px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 10px;
+  
+  Lo simplificamos:
+  
+  border-radius: 20px 10px;
+  
+  El primer valor afecta en diagonal del borde de arriba a la izquierda
+  a el de debajo a la derecha y el otro valor del borde de abajo de
+  la izquierda a el borde de arriba de la derecha.
+  
+  Y si se quieren lo 4 valores diferentes:
+  
+  border-radius: 10px 50px 0px 2px;
+  
+  Primero el borde de arriba a la izquierda, el segundo de arriba 
+  a la derecha, y asímismo el orden con los de abajo.
+  */
+}
+
+body {
+  background: black;
+}
+
+input {
+  margin: 5px;
+  padding: 6px 9px;
+  border: none;
+  border-bottom: 1px solid greenyellow;
+  background: transparent;
+  color: greenyellow;
+}

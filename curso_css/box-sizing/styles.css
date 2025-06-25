@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+}
+
+.box {
+  background: red;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  box-sizing: content-box;
+  /* 
+  Propiedad definida por defecto del navegador.
+  Tiene un ancho y alto de 100px, el padding le obliga a
+  aumentar el ancho y alto de la caja.
+  */
+}
+
+.box-1 {
+  padding: 10px;
+}
+
+.box-2 {
+  padding: 10px;
+  box-sizing: border-box; 
+  /* Box mide 100px de ancho y alto,
+  pero tiene padding, por tanto se reduce el texto para mantener
+  las propiedades definidas
+  */
+}
