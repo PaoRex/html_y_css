@@ -1,0 +1,46 @@
+body {
+    background-color: #469;
+    margin: 0;
+    font-family: sans-serif;
+    color: #fff;
+}
+
+.box {
+    width: 100%;
+    height: 150px;
+    background-color: #000;
+    background-image: url("https://th.bing.com/th/id/OIP.8LZiBhdMeYouml8JnvsJLwHaHa?w=171&h=180&c=7&r=0&o=7&pid=1.7&rm=3");
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+}
+
+.opaco {
+    width: 100%;
+    height: 100%;
+    background-color: #000a;
+}
+
+h2 {
+    padding: 20px;
+    text-align: center;
+}
+
+    /*  Contain adapta el ancho el ancho de la imágen.
+        Si quiero que contain no se repita utilizo background-repeat: no-repeat;
+        Si quiero repetir la imagen en horizontal: background-repeat: repeat-x;
+        Si quiero repetir la imagen en vertical: background-repeat: repeat-y;
+
+        Cover se adapta a las dimensiones del contenedor.
+
+        La propiedad background-position establece la posición de la imagen de fondo. Pueden ser top, right, left, center, bottom.
+        Podemos usar coordenadas espcíficas en background-position. El primer valor positivo se define para la derecha, el primer negativo para la izquierda, el segundo valor positivo para abajo y el segundo negativo para arriba.
+
+        Background-attachment: fixed hace que la imagen de fondo permanezca fija al hacer scroll. Si no se usa, la imagen se desplaza con el contenido.
+
+        Incluso como estamos en un div ponemos texto dentro, y también pusimos el fondo de la caja un poco de opacidad con hexadecimal.
+
+        Podemos comprimir todo background en esto:
+        background: url("https://th.bing.com/th/id/OIP.8LZiBhdMeYouml8JnvsJLwHaHa?w=171&h=180&c=7&r=0&o=7&pid=1.7&rm=3") top / cover fixed #000a;
+
+    */
