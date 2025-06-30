@@ -3,20 +3,25 @@ body {
 }
 
 .box {
-    width: 300px;
-    height: 400px;
+    width: 280px;
     background: #e2e2e299;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 30px;
     box-shadow: 0 0 40px 0px #0007;
     padding: 20px;
     box-sizing: border-box;
-    font-family: sans-serif
+    font-family: sans-serif;
+    color: #444;
+    text-align: center;
 }
 
 h2 {
-    color: #444;
-    text-shadow: 0 0 4px #f88;
+    font-size: 18px;
+    margin-top: 5px;
+    color: #999;
+    letter-spacing: 3px;
+    font-weight: 100;
+    text-shadow: 0 0 5px #aaa;;
 }
 
 p {
@@ -24,6 +29,12 @@ p {
     line-height: 1.5;
     font-size: 14px;
     text-shadow: 0 0 4px #f88;
+    text-align: left;
+}
+
+img {
+    width: 160px;
+    filter: drop-shadow(0px 0px 3px #f92)
 }
 
 /* 
@@ -39,4 +50,6 @@ Acepta 3 valores:
 1. Desplazamiento horizontal (positivo o negativo)
 2. Desplazamiento vertical (positivo o negativo)
 3. Difuminado (radio de desenfoque)
+
+Y filter: drop-shadow() sirve para crear sombras en las imágenes sin borde.
 */
