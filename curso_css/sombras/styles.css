@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+}
+
+.box {
+    width: 300px;
+    height: 400px;
+    background: #e2e2e299;
+    margin: auto;
+    margin-top: 50px;
+    box-shadow: 0 0 40px 0px #0007;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: sans-serif
+}
+
+h2 {
+    color: #444;
+    text-shadow: 0 0 4px #f88;
+}
+
+p {
+    list-style: none;
+    line-height: 1.5;
+    font-size: 14px;
+    text-shadow: 0 0 4px #f88;
+}
+
+/* 
+Box shadow sirve para crear sombras en los elementos.
+Acepta 4 valores:
+1. Desplazamiento horizontal (positivo o negativo)
+2. Desplazamiento vertical (positivo o negativo)
+3. Difuminado (radio de desenfoque)
+4. Color de la sombra
+
+Y text-shadow sirve para crear sombras en el texto.
+Acepta 3 valores:
+1. Desplazamiento horizontal (positivo o negativo)
+2. Desplazamiento vertical (positivo o negativo)
+3. Difuminado (radio de desenfoque)
+*/
