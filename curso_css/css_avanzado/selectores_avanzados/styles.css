@@ -1,0 +1,51 @@
+/* SELECTOR DE ATRIBUTO */
+
+img[src="tarta.jpeg"] {
+    width: 300px;
+    height: 200px;
+}
+
+/* SELECTOR DESCENDIENTE */
+
+ul li{
+    color: grey;
+}
+
+/* SELECTOR POR HIJO DIRECTO */
+
+li > em{
+    color: #672e67;
+}
+
+/* SELECTOR ADYACENTE */
+
+h1 + p{
+    color: #999;
+}
+
+/* SELECTOR DE HERMANOS GENERALES */
+
+h1 ~ p{
+    color: #999;
+}
+
+
+/*
+
+MÁS SELECTORES POR ATRIBUTO 
+
+Selector por atributo con tipo de archivo específico:
+
+img[src$="jpeg"] {
+    width: 300px;
+    height: 200px;
+}
+
+Selector por atributo que comienza con un valor específico:
+
+img[src^="tarta"] {
+    width: 300px;
+    height: 200px;
+}
+
+================================================================================================
