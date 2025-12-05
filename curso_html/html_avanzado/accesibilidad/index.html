@@ -1,13 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página que muestra buenas prácticas para adaptarse a personas con necesidad de accesibilidad.">
+    <meta og:title="Accesibilidad Web">
+    <meta og:description="Página que muestra buenas prácticas para adaptarse a la accesibilidad web.">
     <title>Accesibilidad Web</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <img src="arbol-navidad.jpg" alt="Árbol de Navidad decorado con luces y adornos">
-    <a href="index.html" aria-label="Enlace que redirige a la página principal">Home</a>
+    <a href="index.html">Home</a>
+    <header>
+        <nav>
+            <ul>
+                <li>Decoraciones</li>
+                <li>Regalos</li>
+            </ul>
+        </nav>
+    </header>
     <h2 aria-label="¿Qué es la navidad?">¿Qué es la navidad?</h2>
+    <div id="slider" role="slider" aria-valuenow="2" aria-valuemin="1" aria-valuemax="4" aria-label="Carrusel de imágenes de Navidad">
+         <img src="arbol-navidad.webp" alt="Árbol de Navidad decorado con luces y adornos" id="arbol-navidad">
+    </div>
 </body>
 </html>
