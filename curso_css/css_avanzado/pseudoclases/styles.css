@@ -1,0 +1,114 @@
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    color: #48e;
+    font-family: inherit;
+    font-size: 22px;
+    margin: 30px;
+}
+
+/* HOVER: AL PASAR EL MOUSE POR ENCIMA DEL ELEMENTO */
+h1:hover {
+    color: #000;
+}
+
+/* ACTIVE: AL PASAR HACER CLICK CON EL MOUSE EN UN ELEMENTO */
+h1:active {
+    color: #fff;
+    background-color: #aaa;
+}
+
+.lista {
+    margin: 0 30px;
+    padding: 0;
+    list-style: none;
+}
+
+li, li:first:child, li:last-child span {
+    font-family: inherit;
+    font-size: 16px;
+}
+
+li {
+    color: #000;
+    background-color: #bbb;
+}
+
+/* SELECCIONA EL PRIMER ELEMENTO */
+li:first-child {
+    color: #f00;
+}
+
+/* SELECCIONA UN LI SI, Y OTRO NO */
+li:nth-child(3n) {
+    color: #0f0;
+    background-color: #999;
+}
+
+/* SELECCIONA EL SEGUNDO ELEMENTO DEL MISMO TIPO */
+li:nth-of-tipe(2) {
+    color: #0f0;
+    background-color: #999;
+}
+
+/* SELECCIONA EL ÚLTIMO ELEMENTO */
+li:last-child {
+    color: #00f;
+}
+
+/* SELECCIONA LOS LI QUE NO TENGAN LA CLASE AÑADIR */
+.lista li:not(.añadir) {
+    color: #000;
+}
+
+.añadir {
+    color: #fff;
+}
+
+div {
+    background-color: #a8a;
+    margin: 20px 30px;
+    padding: 50px;
+    border: 2px solid #000;
+    border-radius: 8px;
+}
+
+/* SELECCIONA A UN ELEMENTO SI ESTÁ VACIO */
+div:empty {
+    border: none;
+}
+
+/* SELECCIONA A UN ELEMENTO CUANDO ESTE CHECKEADO */
+input type[type + "checkbox"]:checked {
+    accent-color: #055;
+}
+
+/* SELECCIONA UN INPUT CUANDO ES INVÁLIDO */
+input:invalid {
+    color: #c22;
+    border: 1px solid #c22;
+}
+
+/* SELECCIONA UN INPUT CUANDO ES VÁLIDO */
+input:valid {
+    color: green;
+    border: 1px solid green;
+}
+
+/* SELECCIONA UN LINK NO VISITADO */
+a:link {
+    color: #48e;
+}
+
+/* SELECCIONA UN LINK VISITADO */
+a:visited {
+    color: #247;
+}
+
+/* SELECCIONA UN ELEMENTO AL SER SELECCIONADO */
+p::selection {
+    background-color: #75b;
+    color: #fff;
+}
