@@ -81,7 +81,7 @@ div:empty {
 }
 
 /* SELECCIONA A UN ELEMENTO CUANDO ESTE CHECKEADO */
-input type[type + "checkbox"]:checked {
+input [type + "checkbox"]:checked {
     accent-color: #055;
 }
 
