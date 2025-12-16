@@ -1,0 +1,45 @@
+body {
+    background-color: #ededed;
+    margin: 0;
+    font-family: sans-serif;
+    text-align: center;
+    background-color: #777;
+}
+
+
+.box{
+    border: 2px solid #999;
+    margin: 100px 500px;
+    color: #fff;
+    background-color: #ddd;
+    position: relative;
+    height: 240px;
+}
+
+.box__second-box {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    box-sizing: border-box;
+    margin: 0;
+    display: block;
+}
+
+.second-box--blue {
+    background-color: #00f;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    margin: auto;
+}
+
+.box__second-box:first-child {
+    background-color: red;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
