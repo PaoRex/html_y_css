@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: #ff0000;
+    margin-top: 50px;
+    transition: left 1s cubic-bezier(0.22, 0.68, 0.57, 1);
+    position: relative;
+    left: 0;
+
+}
+
+body:hover .box {
+    left: 400px;
+}
+
+/* Para añadir propiedades transition por separado:
+
+transition-property: left;
+transition-duration: 1s;
+transition-timing-function: cubic-bezier(0.22, 0.68, 0.57, 1);
+transition-delay: 2s;
+
+*/
