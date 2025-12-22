@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    font-family: sans-serif;    
+}
+
+.card {
+    margin: 20vh auto 0;
+    width: 400px;
+    height: 300px;
+    border: 2px solid #444;
+    position: relative;
+    box-shadow: 0 0 20px 0;
+}
+
+.card__image {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-size: 22px;
+    margin: 0 0 10px 0;
+    color: #ccc;
+    text-wrap: balance;
+}
+
+p {
+    font-size: 18px;
+    color: #bbb;
+    text-wrap: pretty;
+    margin: 0 0 10px 0;
+}
+
+.card__content {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    right: 0;
+    padding: 10px;
+    background-color: #457;
+    box-sizing: border-box;
+}
+
+/* 
+
+Object-fit: Funciona igual que background-size con algunos atributos nuevos::after
+
+    None: Ignora el width y height definidos mostrando las dimensiones originales de la imágen
+
+    Scale-down: Si el width o height son mayores a los de la imagen original no la cambia.
+
+_______________________________________________________
+
+Object-position: Funciona igual que background-position
+
+*/
