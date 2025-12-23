@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.flexbox {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.flexbox__flex-item {
+    width: 200px;
+    height: 100px;
+    background-color: #911;
+    margin: 10px;
+    padding: 30px 0;
+    font-size: 40px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.flexbox__flex-item:first-child {
+    background-color: #f77;
+}
+
+p {
+    margin: 0;
+}
+
+/* 
+
+Flex Wrap:
+
+    Nowrap: Esta es la propiedad por defecto de flex wrap.
+
+    Wrap: Ajusta los flex-items cuando no entren en el tamaño del contenedor.
+
+    Wrap-reverse: Al disminuir el tamaño de la pantalla, además de ajustarse los flex-items se cambiaran a una posicion opuesta, como en flex-direction: row-reverse.
+
+______________________________________________________________
+
+Flex Flow: Se utiliza para abreviar flex-direction y flex-wrap.
+
+Su estructura es: flex-flow: row wrap; (Por defecto en la web)
+*/
