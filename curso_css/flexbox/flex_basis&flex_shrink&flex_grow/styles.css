@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.flexbox {
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
+    align-items: center;
+    align-content: start;
+    gap: 10px;
+}
+
+.flexbox__flex-item {
+    padding: 5px 0;
+    background-color: #911;
+    font-size: 40px;
+    text-align: center;
+    color: #fff;
+    box-sizing: border-box;
+    flex: 1 1 150px;
+}
+
+.flexbox__flex-item:first-child {
+    background-color: #f77;
+}
+
+.flexbox__flex-item:last-child {
+    background-color: #611;
+}
+
+
+p {
+    margin: 0;
+}
+
+/* 
+
+Propiedades flex: flex-basis, flex-shrink, flex-grow.
+
+Flex-basis: Tamaño inicial del ítem flexible antes de que el espacio extra se distribuya según flex-grow o flex-shrink. Por defecto es auto (el tamaño del contenido).
+
+______________________________________
+
+Flex-shrink: Define la capacidad de un ítem flexible para reducir su tamaño si es necesario. Por defecto es 1 (puede reducirse).
+
+______________________________________
+
+Flex-grow: Define la capacidad de un ítem flexible para crecer y ocupar espacio adicional en el contenedor flexible. Por defecto es 0 (no crece).
+
+______________________________________
+
+Flex: Es una propiedad abreviada que combina flex-grow, flex-shrink y flex-basis en una sola declaración.
+
+Gap: Espacio entre los ítems flexibles dentro del contenedor flexible.
+
+*/
