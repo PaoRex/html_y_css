@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 10% 30% 40%;
+    grid-template-rows: 200px 125px;
+}
+
+.grid-item {
+    background-color: #48e;
+    margin: 10px;
+    padding: 10px;
+}
+
+.grid-item p {
+    font-size: 30px;
+    margin: 0;
+    color: #fff;
+}
