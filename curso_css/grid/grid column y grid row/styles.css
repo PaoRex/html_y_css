@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.grid {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat(minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.grid-item {
+    min-height: 150px;
+    border-radius: 12px;
+    background-image: url(eagle.webp);
+    background-size: cover;
+    background-position: top;
+    transition: filter .25s ease;
+}
+
+.grid-item:first-child {
+    grid-row: 2/span 2;
+    grid-column: 2/span 2;
+}
+
+.grid-item:hover {
+    filter: brightness(0.6);
+    cursor: grab;
+}
+
+/* 
+
+Grid-column-start: Situa la columna en la que comenzará el grid-item.
+
+Grid-column-end: Situa la columna en la que terminará el grid-item.
+
+Grid-row-start: Situa la fila en la que  comenzará el grid-item.
+
+Grid-row-end: Situa la fila en la que  terminará el grid-item.
+
+Span: Indica cuanto espacio en el grid ocupará en row o en column:
+
+Ej: Grid-row-end: span 2;
+
+Grid-row o grid-column: Es un shorthand para grid-row-start, grid-row-end y viceversa:
+
+Ej: Grid-row: 1/span 2;
+
+*/
