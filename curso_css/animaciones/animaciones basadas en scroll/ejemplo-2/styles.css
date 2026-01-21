@@ -1,0 +1,39 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #ccc;
+}
+
+.container {
+    height: 150vh;
+}
+
+.crecedor {
+    height: 150vh;
+}
+
+.box {
+    view-timeline: --box block;
+    background-color: #48e;
+    width: 100%;
+    min-height: 20px;
+    position: sticky;
+    animation-name: rellenar-barra;
+    animation-timeline: view();
+    animation-timing-function: linear;
+    animation-timeline: --box;
+    overflow-y: scroll;
+    overflow: visible;
+}
+
+@keyframes rellenar-barra {
+    from {
+        width: 0%;
+        background-color: #f0f;
+    }
+
+    to {
+        width: 100%;
+        background-color: #48e;
+    }
+}
