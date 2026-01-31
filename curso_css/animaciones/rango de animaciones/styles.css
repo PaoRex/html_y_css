@@ -1,0 +1,43 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #ccc;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    height: 150vh;
+}
+
+.crecedor {
+    height: 150vh;
+}
+
+.box {
+    view-timeline: --box block;
+    background-color: #48e;
+    width: 100%;
+    min-height: 400px;
+    position: sticky;
+    animation-name: rellenar-barra;
+    animation-timeline: view();
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-timeline: --box;
+    animation-range-start: cover -20%;
+    animation-range-end: contain 50%;
+    background-color: #48e;
+}
+
+@keyframes rellenar-barra {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
