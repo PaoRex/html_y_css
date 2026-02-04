@@ -1,0 +1,50 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://pbs.twimg.com/profile_images/1806302633478471680/bRi-KVbt_400x400.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.box {
+    min-width: min-content;
+    min-height: min-content;
+    padding: 20px 60px;
+    backdrop-filter: sepia(1) blur(5px) contrast(2);
+}
+
+/*  
+
+Drop-Shadow(): Aplica una sombra al elemento, similar a la propiedad box-shadow, pero con la capacidad de seguir la forma del contenido, incluyendo transparencias.
+
+Blur(): Aplica un desenfoque gaussiano al elemento, suavizando los bordes y detalles.
+
+Brightness(): Ajusta el brillo del elemeto teniendo en cuenta 2 valores: 0 es negro y 1 es 100% brillo normal, aunque se puede dar 2... pero esto cambia el color.
+
+Contrast(): Añade más intensidad en colores claros y oscuros.
+
+Grayscale(): Convierte a las imagenes en blanco y negro.
+
+Saturate(): Da intensidad a los colores, y lo contrario.
+
+Hue-rotate(): Cambia los colores base dependiendo de cuanto quieras que sume en grados (deg).
+
+Opacity(): Ajusta la opacidad del elemento, teniendo en cuenta valores entre 0 (completamente transparente) y 1 (completamente opaco).
+
+Backdrop-filter: Afecta a la imagen que permanece debajo.
+
+Nota: Los filtros se ejecutan en el orden indicado, esto afecta el resultado.
+
+*/
