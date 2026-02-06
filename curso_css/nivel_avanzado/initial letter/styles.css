@@ -9,6 +9,7 @@ body {
 
 .box {
     padding: 20px;
+    height: 100dvh;
 }
 
 p:first-letter {
