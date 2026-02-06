@@ -1,0 +1,28 @@
+body {
+    font-family: verdana;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.box {
+    padding: 20px;
+}
+
+p:first-letter {
+    initial-letter: 3 2;
+    padding: 0 10px 0 0;
+    color: #48e;
+}
+
+/* 
+
+Initial-letter: 
+
+- 1er valor: número de líneas que ocupará la letra inicial.
+
+- 2do valor: en que línea se posicionará la letra inicial.
+
+*/
