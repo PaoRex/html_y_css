@@ -1,0 +1,14 @@
+body {
+    font-family: verdana;
+    background-color: #000;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.box {
+    width: 320px;
+    height: 320px;
+    background-color: color-mix(in srgb, #48e 60%, #fff 100%);
+}
