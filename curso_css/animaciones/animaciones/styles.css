@@ -1,0 +1,87 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #ccca;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.box {
+    margin: 20px;
+    padding: 6px;
+    min-height: 80px;
+    background-color: #fff;
+    border: 4px solid #48e;
+    border-radius: 39px;
+}
+
+.barra {
+    padding: 40px;
+    background-color: #f00;
+    border-radius: 30px;
+    width: 10%;
+    animation-name: llenar-barra;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+    animation-iteration-count: 4;
+    animation-direction: alternate;
+}
+
+.barra:active {
+    animation-play-state: paused;
+}
+
+@keyframes llenar-barra {
+    from {
+        width: 10%;
+        background-color: #f00;
+    }
+
+    to {
+        width: 100%;
+        background-color: #48e;
+    }
+}
+
+/* 
+
+@keyframes nombre-animacion... sirve para crear una animacion, y la vinculamos así:
+
+- animation-name: nombre
+
+- animation-duration: 2s
+
+- animation-delay: 1s (opcional)
+
+- animation-fill-mode: 
+
+    - backwards: El elemento adquiere al terminar la animacion la forma que tenía antes de comenzarla.
+    
+    - forwards: DELAY + Al terminar animación se queda así
+
+    - both: Sin delay en width y background-color y cuando termina la animación queda así
+
+- animation-timing-function
+
+- animation-iteration-count
+
+    - infinite: repetición infinita
+
+- animation-direction
+
+    - reverse: Se ejecuta la animación al reverso
+
+    - normal: Por defecto
+
+    - alternate: Comienza normal y vuelve en reverse.
+
+- animation-play-state
+
+    - paused: Pausa la animación
+
+    - running: Estado de la animación por defecto.
+*/

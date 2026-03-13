@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* PARA IMPRESIÓN */
+@media print {
+    body {
+        font-size: 24pt;
+    }
+}
+
+/* PARA PANTALLA */
+@media screen {
+    body {
+        font-size: 22px;
+        margin: 50px 150px;
+        background-color: #000;
+        color: #fff;
+    }
+}
+
+/* PARA PANTALLAS USANDO MAX-WIDTH */
+@media screen and (max-width: 600px) {
+    body {
+        margin: 75px;
+        font-size: 22px;
+        background-color: #000;
+        color: #fff;
+    }
+
+    .flexbox {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    body {
+        margin: 50px;
+        font-size: 18px;
+        background-color: #000;
+        color: #fff;
+    }
+
+    .flexbox {
+        flex-direction: column;
+    }
+}
+
+.flexbox {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
+    gap: 10px;
+}
+
+.flexbox__flex-item {
+    background-color: #5ab;
+    min-width: 200px;
+    padding: 20px;
+    flex: 1 1 0;
+}

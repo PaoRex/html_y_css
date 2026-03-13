@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.flexbox {
+    display: flex;
+    flex-direction: row;
+    direction: ltr;
+}
+
+.flexbox__flex-item {
+    width: 150px;
+    height: 150px;
+    background-color: #911;
+    margin: 10px;
+    padding: 55px 0;
+    font-size: 40px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.flexbox__flex-item:first-child {
+    background-color: #f77;
+}
+
+p {
+    margin: 0;
+}
+
+/* 
+
+Flex-direction:
+
+    Row: Alineados en fila con dirección derecha
+
+    Row-reverse: Alineados en fila con dirección izquierda
+
+    Column: Alineados en columna con dirección derecha
+
+    Column-reverse: Alineados en fila con dirección izquierda
+
+______________________________________________________________
+
+Direction: 
+
+    Ltr: Por defecto en los idiomas de izquirda a derecha.
+
+    Rtl: Para idiomas arábicos: que leen de derecha a izquierda.
+
+*/

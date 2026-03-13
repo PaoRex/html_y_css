@@ -1,0 +1,52 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 10px;
+    --color-principal: #f44;
+    --tamaño-principal: 1.2rem;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    min-height: 96.5vh;
+}
+
+.box {
+    margin: 0 auto;
+    display: grid;
+    place-content: center;
+    font-size: clamp(var(--tamaño-principal), 1.6vw, 3.2rem);
+    color: #fff;
+    padding: 0 40px;
+    width: clamp(300px, 80%, 1300px);
+}
+
+.box:first-child {
+    background-color: var(--color-principal);
+}
+
+.box:nth-child(2) {
+    color: var(--color-principal);
+    border: 5px solid var(--color-principal);
+}
+
+h1 {
+    margin-bottom: 0;
+}
+
+body > p {
+    color: var(--color-secundario);
+}
+
+@property --color-secundario {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #48e;
+}

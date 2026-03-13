@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #bbb;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    margin-top: 50px;
+    border: 1px solid #0006;
+    position: absolute;
+    left: 20vw;
+    overflow: auto;
+    white-space: pre-wrap;
+    box-sizing: border-box;
+}
+
+.box--2 {
+    top: 0;
+    left: 60vh;
+    overflow: hidden;
+    white-space: pre;
+    text-overflow: ellipsis;
+}
+
+.box-3 {
+    bottom: 20vh;
+    left: 22.5vh;
+    overflow: hidden;
+    white-space: normal;
+    word-break: break-all;
+}
+
+.box-4 {
+    bottom: 20vh;
+    left: 60vh;
+    overflow: scroll;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    text-wrap: pretty;
+}
+
+h1 {
+    font-size: 20px;
+    text-wrap: balance;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+/* El atributo normal biene por defecto en white-space */
+
+/* 
+
+Atributos de white-space:
+
+Normal: Es el atributo por defecto de white-space
+
+Nowrap define que no existirán saltos de líneas en el texto
+
+Pre establece saltos de línea y cualquier espaciado del documento, sin importar si se desborda.
+
+Pre-wrap es una mezcla entre normal y pre
+
+________________________________________________________
+
+Atributos de text-overflow:
+
+Clip: Es el atributo por defecto de text-overflow
+
+Ellipsis: Añade los famosos (...) si hay desbordamiento
+
+________________________________________________________
+
+Atributos de word-break:
+
+Normal: Este es el atributo por defecto de word-break
+
+Break-all: Rompe una palabra dependiendo del width del box.
+
+Keep-all: Evita la ruptura de palabra en idiomas CJK
+
+Auto-phrase: Evita cortar palabras de CJK realizando un salto de línea.
+
+________________________________________________________
+
+Atributos de overflow-wrap/ word-wrap
+
+Normal: Este es el atributo por defecto de overflow-wrap
+
+Break-word: Rompe una palabra si algún caracter se desborda
+
+Anywhere: Rompe una palabra cuando se desborda
+_________________________________________________________
+
+Atributos de text-wrap:
+
+Normal: Este es el atributo por defecto de text-wrap
+
+Balance: Equilibra visualmente las líneas de texto, evitando las líneas huérfanas. Adecuado para encabezados y títulos.
+
+Pretty: Equilibra visualmente las líneas de texto, evitando las líneas huérfanas. Adecuado para párrafos
+
+*/

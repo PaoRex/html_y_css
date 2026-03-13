@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+@supports (color: oklch(30% 0.2 30)) {
+    body {
+        color: oklch(30% 0.2 30);
+    }
+}
+
+@supports not (color: oklch(30% 0.2 30)) {
+    body {
+        color: #912;
+    }
+}

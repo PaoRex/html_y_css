@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.box {
+    width: 150px;
+    padding: 10px;
+    background-color: red;
+    margin: auto;
+    margin-top: 50px;
+    border: 5px solid #000;
+}
+
+.box:hover {
+    outline: 5px solid blue;
+    outline-offset: 5px;
+}
+
+.form {
+    width: 90%;
+    border: 3px solid #d09306;
+    box-shadow: 0 0 10px 0;
+    margin: 20px auto;
+    background: url(form-background.jpeg);
+    background-size: cover;
+    background-position: center;
+    padding: 20px 28%;
+    box-sizing: border-box;
+}
+
+.form__title {
+    margin: 0 0 20px 0;
+    font-size: 22px;
+    color: #fff;
+    text-wrap: balance;
+}
+
+.form__input, .form__submit {
+    margin: 10px 0;
+    display: block;
+    padding: 6px 12px;
+    border: none;
+    border-left: 3px solid #ecab0f;
+    transition: background-color, 0.5s, color, 0.5s;
+}
+
+.form__input:focus {
+    background-color: #000;
+    color: #fff;
+}
+
+.form__input:focus-visible {
+    outline: none;
+}
+
+.form__label {
+    font-size: 20px;
+    color: #fff;
+    line-height: 2;
+}
+
+.form__submit {
+    margin: 30px 0 10px 0;
+    background-color: #ecab0f;
+    color: #fff;
+    border: none;
+}
+
+.form__submit:hover {
+    outline: 1px solid #fff;
+}
+
+.form__submit:active {
+    border: 1px solid #fff;
+    outline: 1px solid #fff;
+    outline-offset: 2px;
+}
+/* 
+
+Outline:
+
+Forma parte del modelo de caja entre el border y el margin, sin ocupar espacio alguno, solo visualmente.
+
+Funciona igual que border y es shorthand::after
+
+    Border: 1px solid #000;
+
+    Outline-size: define el tamaño del outline
+
+    Outline-color: define el color del outline
+
+    Outline-style: define el estilo del outline
+
+    Outline-offset: define la separación entre outline y border
+
+Nota:
+
+Cuando quieras quitar el outline de un input no lo hagas directamente con el pseudoelemento focus, sino con focus-visible, sino la persona que use accesibilidad no podrá ver el outline
+
+
+*/

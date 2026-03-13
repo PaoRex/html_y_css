@@ -1,0 +1,56 @@
+body {
+    font-family: Helvetica;
+    font-size: 20px;
+}
+
+div {
+    padding: 20px;
+}
+
+
+/* SELECCIONA LA PRIMERA LETRA */
+h1::first-letter {
+    font-size: 1.7em;
+    letter-spacing: -6px;
+}
+
+/* SELECCIONA LA PRIMERA LÍNEA */
+div::first-line {
+    font-weight: bold;
+}
+/* SELECCIONA EL ELEMENTO SI ES SELECCIONADO */
+div::selection {
+    color: #fff;
+    background-color: #79a24f;
+}
+
+/* SELECCIONA UN PLACEHOLDER */
+input::placeholder {
+    font-family: inherit;
+    font-size: 0.4em;
+    color: #999;
+}
+
+/* SELECCIONA EL * DE UNA LISTA */
+li::marker {
+    color: #777;
+}
+
+/* AÑADE CONTENIDO ANTES DE CADA LI */
+li:before {
+    content: "El";
+    margin: 0px 2px;
+    color: red;
+}
+
+/* SELECCIONA Y MODIFICA lA VIÑETA DE UN LI */
+li::marker {
+    content: "★";
+}
+
+/* AÑADE CONTENIDO DESPUÉS DE CADA LI */
+li:after {
+    content: "después";
+    margin: 0px 2px;
+    color: blue;
+}

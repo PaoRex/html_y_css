@@ -1,0 +1,43 @@
+section .elemento1, section .elemento2, section .elemento3 {
+    color: red;  
+}
+
+/* MODIFICA LOS ELEMENTOS 1, 2 y 3 QUE SE ENCUENTREN EN ALGÚN SECTION */
+section :is(.elemento1, .elemento2, .elemento3) {
+    color: blue;
+}
+
+/* 
+
+HAS MODIFICA EL ELEMENTO SI DENTRO DE UN ELEMENTO SE ENCUENTRA OTRO ELEMENTO,
+EN ESTE CASO SE MODIFICA SI DESPUÉS DE UL SE ENCUNENTRA UN DIV.
+
+*/
+
+ul:has(+div) {
+    color: green;
+}
+
+/*
+
+WHERE HACE LO MISMO QUE IS PERO CON UNA ESPECIFICIDAD MENOR: (0, 0, 1)
+
+*/
+
+form {
+    border: 2px solid #888;
+    padding: 20px;
+    margin: 10px 20px;
+}
+
+label:has(input:valid) {
+    color: green;
+}
+
+label:has(input:invalid) {
+    color: red;
+}
+
+input {
+    color: inherit;
+}

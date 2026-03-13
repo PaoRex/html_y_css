@@ -1,0 +1,42 @@
+#h1 {
+    color: green;
+}
+
+.h1 {
+    color: blue;
+}
+
+h1 {
+    color: aqua !important;
+}
+
+h1 {
+    color: red;
+}
+
+/* 
+
+1. Cuando la especificidad es igual, el último estilo declarado en el CSS tiene prioridad.
+
+2. Cuando un elemento tiene mayor especificidad, ese estilo tiene prioridad sobre los estilos con menor especificidad.
+
+3. Los elementos html normales tienen la especificidad más baja: (0, 0, 1)
+
+4. Las clases, pseudo-clases y atributos tienen una especificidad media: (0, 1, 0)
+
+5. Los IDs tienen la especificidad más alta en styles.css: (1, 0, 0)
+
+6. Si el estilo se aplica mediante un atributo style en el HTML, este tiene mayor especificidad que los IDs.
+
+7. !Important tiene la mayor prioridad de todas.
+
+El orden de cascada de importancia es:
+
+    1. !Important
+    2. Atributo style
+    3. Etiqueta <style> o styles.css
+    4. Estilos definidos por el usuario en el navegador
+    5. Estilos definidos por el navegador predeterminado
+
+También hay que tener en cuenta la cascada + especificidad.
+*/

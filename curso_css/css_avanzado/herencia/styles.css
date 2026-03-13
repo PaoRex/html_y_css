@@ -1,0 +1,17 @@
+div {
+    color: brown;
+    font-family: "Sans-serif";
+    width: 50%;
+}
+
+h1 {
+    color: inherit;
+    width: initial;
+    font-family: unset;
+}
+
+/* 
+   Reveal se usa para cambiar al valor de usuario y sino encuentra entónces al valor
+   del navegador.
+
+*/

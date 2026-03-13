@@ -1,0 +1,22 @@
+.lista {
+    border: 1px solid #bbb;
+}
+
+.lista--vieja {
+    opacity: 0.4;
+    background-color: #999;
+}
+
+.lista__item {
+    color: 777;
+    margin: 10px 0;
+    list-style: square;
+}
+
+.item--danino {
+    color: #f00;
+}
+
+.item--importante {
+    color: #00f;
+}

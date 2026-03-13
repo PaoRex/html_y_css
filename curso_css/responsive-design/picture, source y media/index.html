@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture, Source y Media</title>
+</head>
+<body>
+    <picture>
+        <source srcset="image-small.webp 400w, image-medium.webp 600w, image.webp 1000w" sizes="(max-width: 400px) 300px, (max-width: 600px) 550px, 1000px" type="image/webp">
+        <img src="image-small.png" srcset="image-small.png 400w, image-medium.png 600w, image.png 1200w" sizes="(max-width: 400px) 300px, (max-width: 600px) 550px, 1000px" alt="Hojas del otoño">
+    </picture>
+        
+    <style>
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</body>
+</html>

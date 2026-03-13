@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.grid {
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: auto auto;
+}
+
+.grid-item {
+    background-color: #48e;
+    margin: 10px;
+    padding: 10px;
+}
+
+.grid-item p {
+    font-size: 30px;
+    margin: 0;
+    color: #fff;
+}

@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    --bg-color: color-mix(in srgb, #f62 70%, #fff);
+    --cb-color: #fff;
+    --dark-color: #f62;
+    background-color: var(--bg-color);
+}
+
+.chat {
+    max-width: clamp(300px, 70%, 900px);
+    background-color: var(--cb-color);
+    margin: 50px auto;
+    border-radius: 20px;
+}
+
+.chat__user {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--dark-color);
+}
+
+.chat__user span {
+    font-size: 1.2rem;
+}
+
+.chat__user img {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 8px 14px 6px 6px;
+}
+
+.chat__content {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.msg {
+    width: fit-content;
+    max-width: clamp(300px, 70%, 900px);
+    background-color: var(--bg-color);
+    color: #fff;
+    font-size: .95rem;
+    padding: 6px;
+    border-radius: 6px 6px 6px 0;
+    position: relative;
+    z-index: 20;
+    box-shadow: 2px 2px 9px #0003;
+    margin-bottom: 20px;
+}
+
+.msg.self:has(+ .msg.self),
+.msg:not(.self):has(+ .msg:not(.self)) {
+    margin-bottom: 10px;
+}
+
+.msg:last-child, .msg.self:last-child {
+    margin-bottom: 0;
+}
+
+.msg::before {
+    content: "";
+    position: absolute;
+    height: 12px;
+    width: 18px;
+    background-color: var(--bg-color);
+    bottom: -10px;
+    left: -4.5px;
+    clip-path: polygon(26% 0, 0 61%, 100% 0);
+    z-index: 10;
+}
+
+.msg.self::before {
+    background-color: var(--dark-color);
+    left: auto;
+    right: -4.5px;
+    transform: scaleX(-1);
+}
+
+div.msg.self {
+    border-radius: 6px 6px 0 6px;
+}
+
+.self {
+    background-color: var(--dark-color);
+    margin-left: auto;
+}

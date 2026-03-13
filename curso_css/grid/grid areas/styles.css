@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #ccc;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.grid {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: minmax(200px, 1fr) minmax(300px, 3fr) minmax(200px, 1fr);
+    grid-template-areas: "nav main aside"; 
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    background-color: #fff;
+    max-height: 100%;
+}
+
+.grid-item {
+    border-radius: 12px;
+    background-image: url(eagle.webp);
+    background-size: cover;
+    background-position: top;
+    transition: filter .25s ease;
+}
+
+header, nav, main, aside, footer {
+    padding: 20px;
+    border: 2px solid #444;
+}
+
+nav, aside {
+    position: sticky;
+    top: 5px;
+    height: 100vh;
+}
+
+header {
+    grid-area: header;
+    background-color: #48e;
+    color: #fff;
+    border-color: #48e;
+    text-align: center;
+}
+
+nav {
+    grid-area: nav;
+    min-width: 200px;
+    max-width: 300px;
+}
+
+main {
+    grid-area: main;
+    min-width: 300px;
+    max-width: 800px;
+}
+
+aside {
+    grid-area: aside;
+    min-width: 200px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #000;
+    color: #fff;
+}
+
+h1 {
+    font-size: 22px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 500px) {
+    .grid {
+        grid-template-areas: 
+        "nav"
+        "main"
+        "aside";
+        grid-template-columns: 1fr;
+    }
+
+    nav, aside {
+        height: auto;
+        position: static;
+        max-width: 100%;
+    }
+}

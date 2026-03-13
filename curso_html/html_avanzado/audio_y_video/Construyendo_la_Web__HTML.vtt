@@ -1,0 +1,236 @@
+WEBVTT
+
+00:00.000 --> 00:05.000
+Muy buenas a todos y bienvenidos. A ver, hoy vamos a meternos de lleno en algo que es
+
+00:05.000 --> 00:10.000
+literalmente la base de todo lo que vemos en Internet. Vamos a construir juntos una página
+
+00:10.000 --> 00:16.000
+web desde cero, desde los cimientos, utilizando el lenguaje que lo empieza todo, el HTML.
+
+00:16.000 --> 00:21.000
+A ver, seguro que más de una vez navegando por una web súper chula nos hemos parado a pensar.
+
+00:21.000 --> 00:26.500
+¿Cómo empieza esto? O sea, ¿cuál es la primera pieza del puzzle? El primer ladrillo de todo este
+
+00:26.500 --> 00:32.500
+edificio digital. La pregunta parece simple, ¿verdad? Pues la respuesta es la clave de toda la web.
+
+00:32.500 --> 00:39.500
+Pues sí, la respuesta es así declara, HTML, da igual la web que sea, desde la más sencilla a la
+
+00:39.500 --> 00:45.500
+más monstruosamente compleja. Todas, absolutamente todas, empiezan aquí. Es como el idioma universal
+
+00:45.500 --> 00:50.500
+que hablan los navegadores para saber que tienen que dibujar en la pantalla. Venga, pues
+
+00:50.500 --> 00:55.500
+esta es nuestra hoja de ruta. Vamos a ver qué es eso del esqueleto de la web, como son sus piezas
+
+00:55.500 --> 01:01.500
+o etiquetas, la estructura básica como meter texto que herramienta usar y lo más importante nos
+
+01:01.500 --> 01:06.500
+pondremos manos a la obra. Vale, vamos con lo primero que es la idea más importante de todas.
+
+01:06.500 --> 01:12.500
+Pensemos en una web como si fuera una persona. El HTML no son los colores, no es la ropa, ni siquiera
+
+01:12.500 --> 01:18.500
+los gestos. No, el HTML es el esqueleto, la estructura que lo sostiene todo.
+
+01:18.500 --> 01:23.500
+Sus siglas significan Hypertext Markup Language y su única misión es esa, crear y estructurar
+
+01:23.500 --> 01:29.500
+el contenido. Al HTML de verdad le da completamente igual si algo es bonito o feo. Su trabajo es
+
+01:29.500 --> 01:34.500
+decirle al navegador, oye, esto de aquí es un titular, esto otro es un párrafo y esto es una lista.
+
+01:34.500 --> 01:41.500
+Pone orden, vamos. Muy bien. Y como le dice el HTML al navegador lo que es cada cosa?
+
+01:41.500 --> 01:47.500
+Pues con una cosa súper simple, las etiquetas. Pensad en ellas como los ladrillos de lego.
+
+01:47.500 --> 01:52.500
+Todo, absolutamente todo en una página web está hecho de etiquetas.
+
+01:52.500 --> 01:57.500
+Una etiqueta normal y corriente tiene tres partes, es muy fácil, primero, la de apertura.
+
+01:57.500 --> 02:03.500
+Se pone el nombre de la etiqueta, por ejemplo una app de párrafo, entre estos símbolos de menor que y mayor que.
+
+02:03.500 --> 02:08.500
+Después va el contenido, el texto en sí, y para terminar la etiqueta de cierre.
+
+02:08.500 --> 02:13.500
+Ojo que es igual que la de apertura, pero con una barra, una barra justo antes de la app.
+
+02:13.500 --> 02:17.500
+Esta barra es la señal que le dice al navegador, hasta aquí llegó el párrafo.
+
+02:17.500 --> 02:23.500
+Venga, ya tenemos los ladrillos, ahora toca ver cómo se montan para formar ese esqueleto del que hablábamos.
+
+02:23.500 --> 02:28.500
+Y para entenderlo bien lo mejor es imaginarse un árbol, con su tronco y sus ramas.
+
+02:28.500 --> 02:34.500
+Fijaos, es siempre así, la etiqueta HTML es el tronco, la raíz de todo, lo envuelve todo.
+
+02:34.500 --> 02:39.500
+Y de ese tronco salen dos ramas enormes, el jet, la cabeza y el body, el cuerpo.
+
+02:39.500 --> 02:43.500
+Todo lo que pongamos en nuestra página tiene que vivir dentro de una de estas dos ramas.
+
+02:43.500 --> 02:45.500
+¿Y qué va en cada sitio?
+
+02:45.500 --> 02:51.500
+Pues en el G, en la cabeza, va información que no se ve en la página en sí, pero que es útil para el navegador.
+
+02:51.500 --> 02:55.500
+Por ejemplo, el título que sale arriba en la pestaña del Chrome o Firefox.
+
+02:55.500 --> 03:04.500
+Y en el body, pues va todo lo demás, todo lo visible, todo lo que la gente lee, clica, ve, va dentro del body, es donde está la chicha.
+
+03:04.500 --> 03:07.500
+Perfecto, ya está el esqueleto en su sitio.
+
+03:07.500 --> 03:09.500
+Ahora vamos a darle un poco de sustancia, ¿no?
+
+03:09.500 --> 03:13.500
+Vamos a añadir lo más básico y fundamental, texto.
+
+03:13.500 --> 03:18.500
+Y claro, HTML tiene etiquetas para todo, también para organizar los títulos y los párrafos.
+
+03:18.500 --> 03:22.500
+Para los títulos tenemos una jerarquía como en el ejército,
+
+03:22.500 --> 03:24.500
+vades del H1 hasta el H6.
+
+03:24.500 --> 03:27.500
+El H1 es el jefe, el título al principal, el más importante.
+
+03:27.500 --> 03:33.500
+Y aquí va un consejo clave, de verdad, para que huen los quiera, sólo un H1 por página, ¿vale?
+
+03:33.500 --> 03:39.500
+Solo uno, luego ya los H2, H3 y demás, los usamos para subtítulos y para ir dividiendo el contenido.
+
+03:39.500 --> 03:44.500
+Y para el texto normal, el de toda la vida, usamos la etiqueta P, de párrafo.
+
+03:44.500 --> 03:46.500
+Esto nos crea un bloque de texto.
+
+03:46.500 --> 03:52.500
+¿Pero qué pasa si queremos que una palabra concreta dentro de ese párrafo destaque que se ponga en negrita?
+
+03:52.500 --> 03:54.500
+Pues para eso está la etiqueta Strong.
+
+03:54.500 --> 03:59.500
+No nos crea un párrafo nuevo ni nada, simplemente envuelve esa palabra y le dice al navegador.
+
+03:59.500 --> 04:02.500
+E, esto es importante y la pone en negrita.
+
+04:02.500 --> 04:07.500
+A ver, todo esto que estamos viendo se podría escribir en el blog de notas de Windows, claro que sí,
+
+04:07.500 --> 04:09.500
+pero sería una auténtica tortura.
+
+04:09.500 --> 04:15.500
+Por eso existen herramientas que nos hacen la vida más fácil y una de las más populares y potenteses visual y estudio code.
+
+04:15.500 --> 04:21.500
+No hay que pensar en él como algo súper complejo, sino más bien como un blog de notas con superpoderes.
+
+04:21.500 --> 04:24.500
+Y es que la gracia de estos editores es que son listos.
+
+04:24.500 --> 04:29.500
+Tienen funciones que la primera vez que las ves parece en pura magia.
+
+04:29.500 --> 04:32.500
+Por ejemplo, cuando escribimos la etiqueta de apertura,
+
+04:32.500 --> 04:36.500
+SAS, ves y code, escribe la etiqueta de cierre por nosotros.
+
+04:36.500 --> 04:38.500
+Esta maravilla se llama autocompletado.
+
+04:38.500 --> 04:44.500
+Y si a eso les sumamos que nos pone las etiquetas de colores para leer las mejor y que nos ayuda a organizar los archivos,
+
+04:44.500 --> 04:50.500
+pues escribir código se convierte en algo mucho más rápido, cómodo y sobre todo con muchísimos menos fallos.
+
+04:50.500 --> 04:53.500
+Bueno, ya está bien de chachara.
+
+04:53.500 --> 04:55.500
+Ha llegado el momento de la verdad.
+
+04:55.500 --> 05:02.500
+Vamos a remangarnos y a usar todo esto que hemos visto para construir, ahora mismo, nuestra primera página web.
+
+05:02.500 --> 05:06.500
+Lo haremos juntos. Paso a paso. Como si fuera una clase práctica.
+
+05:06.500 --> 05:11.500
+Venga, vamos allá. Primero, abrimos Visual Studio Code y creamos un archivo nuevo.
+
+05:11.500 --> 05:15.500
+Lo guardamos con el nombre index.html. Es importante.
+
+05:15.500 --> 05:22.500
+Segundo, el truco de magia de antes. Escribimos HTML y en el menú que sale, elegimos la opción HTML5.
+
+05:23.500 --> 05:25.500
+Tachán, ya tenemos todo el esqueleto.
+
+05:25.500 --> 05:31.500
+Tercero, nos vamos dentro del body y escribimos una etiqueta h1 que diga mi primer título.
+
+05:31.500 --> 05:37.500
+Y cuarto, justo debajo, añadimos una etiqueta p con el texto. Este es mi primer párrafo.
+
+05:37.500 --> 05:42.500
+Ahora, solo queda guardar el archivo. Una vez guardado, vamos a la carpeta donde está.
+
+05:42.500 --> 05:46.500
+Le hacemos doble clic y se abrirá en nuestro navegador web.
+
+05:47.500 --> 05:52.500
+Y ahí está nuestra primera página. Es sencilla, claro que sí, pero es real, es funcional.
+
+05:52.500 --> 05:59.500
+Y lo más importante, está construida exactamente con las mismas reglas que cualquier otra página que visitemos en Internet.
+
+05:59.500 --> 06:04.500
+Y bueno, con esto ya hemos terminado, pero en realidad esto no es el final.
+
+06:04.500 --> 06:09.500
+Es el principio. El primer paso, que siempre es el más difícil, ya está dado.
+
+06:09.500 --> 06:12.500
+Así que la pregunta importante ahora no es ¿qué hemos aprendido?
+
+06:12.500 --> 06:15.500
+Si no, ¿qué es lo siguiente que vamos a crear?
+

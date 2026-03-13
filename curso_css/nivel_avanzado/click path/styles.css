@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    background-color: #222;
+    --font-color: #fff;
+    font-family: verdana;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+}
+
+img {
+    max-width: 100%;
+    max-height: fit-content;
+}
+
+.box:first-child img {
+    clip-path: circle(60% at 30% 50%);
+}
+
+.box:nth-child(2) img {
+    min-height: 300px;
+    object-fit: cover;
+    clip-path: ellipse(50% 40%);
+}
+
+.box:nth-child(3) img {
+    min-height: 300px;
+    object-fit: cover;
+    clip-path: polygon(0% 0%, 100% 50%, 0% 100%, 20% 50%);
+}
+
+h2 {
+    color: var(--font-color);
+    font-size: 30px;
+    font-weight: 300;
+}

@@ -1,0 +1,26 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.box {
+    border: 2px solid #000;
+    width: 50vw;
+    height: 100vh;
+    overflow: auto;
+    scroll-behavior: smooth;
+    scrollbar-color: #48e #fff;
+    scrollbar-width: auto;
+}
+
+/* 
+
+Utiliza colores contrastados al usar scrollbar-color por la accesibilidad.
+
+Utiliza un scroll-width auto para distinguirse en accesibilidad que uno thin
+
+*/

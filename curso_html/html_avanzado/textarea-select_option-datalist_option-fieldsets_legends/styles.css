@@ -72,6 +72,10 @@ legend {
     padding: 0 5px;
 }
 
+a {
+    color: #eee;
+}
+
 /*
  Podemos utlizar readonly para que el usuario no pueda editar el contenido del textarea
 
