@@ -1,0 +1,26 @@
+body {
+    background-color: #9cc;
+    color: #5d6164;
+    font-family: arial;
+}
+
+details {
+    background-color: transparent;
+    border: 1px solid #5d6164;
+    border-bottom: none;
+}
+
+
+details[open] {
+    border: 1px solid #5d6164;
+    font-weight: bold;
+}
+summary {
+    background-color: transparent;
+    border-bottom: 1px solid #5d6164;
+    padding: 10px;
+}
+
+ul {
+    font-weight: 100;
+}
